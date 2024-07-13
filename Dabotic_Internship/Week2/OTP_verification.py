@@ -1,3 +1,22 @@
+'''
+Note :- "I had deleted my credential file for safety reason, Please! add your credential file."
+
+Instructions are provided below
+
+# Obtain credentials.json:
+> Go to the Google Cloud Console.
+> Create a new project or select an existing one.
+> Enable the Gmail API.
+> Create OAuth 2.0 Client IDs and download the credentials.json file.
+> Place this file in the same directory as your script.
+
+# Run the Script:
+> The first time you run the script, it will open a browser window to authenticate your Google account and grant the required permissions.
+> The OAuth tokens will be saved in token.pickle for future use.
+
+'''
+
+
 import os
 import pickle
 import random
