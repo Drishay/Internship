@@ -34,7 +34,9 @@ def send_mail(service, user_id, message):
         print(f"An error occurred: {error}")
         return None
 
-def main():
+def main(user_email, count = 0):
+    count +=1
+
     creds = None
     # Check if token.pickle exists, which stores the user's access and refresh tokens
     if os.path.exists('token.pickle'):
@@ -53,8 +55,7 @@ def main():
 
     service = build('gmail', 'v1', credentials=creds)
 
-    # Get user email
-    user_email = input("Enter your email address to receive an OTP: ")
+    
 
     # Generate OTP
     otp = generate_otp()
@@ -71,6 +72,7 @@ def main():
         print("OTP sent successfully!")
     else:
         print("Failed to send OTP email.")
+        quit()
 
     for i in range(1,4):  #give 3 chance to enter the correct OTP and if the loops completes it means that the OTP is not verified 
 
@@ -90,7 +92,12 @@ def main():
             print("Invalid OTP. Please try again.")
     else:  #when loop is completed successfully, else will be executed
         print("OTP not verified")
+        if count == 2: #only 2 times the OTP will be generated
+            quit()
+        print("Re-generating OTP twice")
+        main(user_email, count)  #re-generate OTP
 
 if __name__ == '__main__':
-    main()
-
+    # Get user email
+    user_email = input("Enter your email address to receive an OTP: ")
+    main(user_email)
