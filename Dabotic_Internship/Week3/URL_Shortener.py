@@ -1,5 +1,7 @@
 # install - pip install pyshorteners
 
+# Note - Connect to the internet and check stable connection
+
 # import pyshorteners
 import pyshorteners
 
