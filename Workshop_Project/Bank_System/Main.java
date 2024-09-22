@@ -16,7 +16,7 @@ public class Main {
         String sql_user = "root";  
 
         // SQL password
-        String sql_password = "#DRI@7527";  
+        String sql_password = "";  
 
         // Creating an object of SqlDatabase class to use its methods
         SqlDatabase sqlDatabase = new SqlDatabase(); 
