@@ -1,0 +1,67 @@
+# Query to create a database bank
+
+    CREATE DATABASE bank;
+
+
+
+# Use database bank
+
+    USE bank; 
+
+
+
+# Query to create staff_details.
+
+    CREATE TABLE staff_details (
+        User_ID CHAR(50) NOT NULL,
+        User_Password VARCHAR(250) NOT NULL,
+        User_Forgot_Question CHAR(100) NOT NUL,
+        User_Forgot_Answer CHAR(100) NOT NUL,
+        PRIMARY KEY (User_ID)
+    );
+
+
+
+# Query to insert value into staff_details
+
+    INSERT INTO Users (User_ID, User_Password, User_Forgot_Question, User_Forgot_Answer)
+    VALUES ('Hanuman', 'R18ra1Am13M@2@128237346', 'Favourite book?', 'N14nC3cE5eR18rT20t');
+
+
+
+# Query to create customer_details
+
+    CREATE TABLE customer_detail (
+        User_ID CHAR(50) NOT NULL PRIMARY KEY,
+        User_Password VARCHAR(250) NOT NULL,
+        User_Name CHAR(50) NOT NULL,
+        User_Parent_Name CHAR(50),
+        User_DOB DATE NOT NULL,
+        User_PAN_Number CHAR(30) NOT NULL,
+        User_Aadhar_Number CHAR(20) NOT NULL,
+        User_Address CHAR(200) NOT NULL,
+        User_Phone_Number CHAR(14) NOT NULL,
+        User_Email CHAR(50),
+        User_Forgot_Question CHAR(100),
+        User_Forgot_Answer VARCHAR(250),
+        User_Account_Number CHAR(20) NOT NULL,
+        User_Account_Type CHAR(10) NOT NULL,
+        User_Account_Opening_Date DATE NOT NULL,
+        User_Account_Balance DECIMAL(15,2),
+        User_Account_Status CHAR(10)
+    );
+
+# Query to insert value into customer_detail
+    INSERT INTO Users (
+        User_ID, User_Password, User_Name, User_Parent_Name, User_DOB, User_PAN_Number, 
+        User_Aadhar_Number, User_Address, User_Phone_Number, User_Email, 
+        User_Forgot_Question, User_Forgot_Answer, User_Account_Number, 
+        User_Account_Type, User_Account_Opening_Date, User_Account_Balance, 
+        User_Account_Status
+    ) 
+    VALUES (
+        'Hanuman', 'R18ra1Am13M@2@128237346', 'Hanuman', 'Vayu', '2024-01-22', 
+        'HANU1234', '123456789987', 'ram ji ke pass', '1231231234', 'haunman@ram.bhakat', 
+        'Favourite Person?', 'H8ha1An14Nu21Um13Ma1An14N', 'Ra123m123', 'Saving', 
+        '2024-09-22', 1.00, 'Active'
+    );

@@ -1,0 +1,17 @@
+# Hardware Requirements
+    Processor: Intel i3 or higher
+    RAM: 4 GB (8 GB recommended)
+    Storage: 10 GB of free space
+    Display: 15-inch monitor or larger
+    Network Connectivity: Required for online features
+    
+# Software Requirements
+    Operating System: Windows 10/11, Linux, or macOS
+    Java Development Kit (JDK): JDK 8 or higher
+    SQL Database: MySQL or PostgreSQL
+    Java IDE: IntelliJ IDEA, Eclipse, or NetBeans
+    Database Tools: MySQL Workbench, pgAdmin, or DBeaver
+    Version Control: Git (GitHub/Bitbucket)
+
+# Other Requirements
+    JDBC Driver: For Java-SQL connection
