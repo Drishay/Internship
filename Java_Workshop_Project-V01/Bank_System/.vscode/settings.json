@@ -1,0 +1,7 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Coding_Projects\\GitHub-Desktop\\Workshop_Notes\\OOT-using-Java\\Workshop_Project\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0.jar",
+        "d:\\Coding_Projects\\GitHub-Desktop\\Internship\\Workshop_Project\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0\\mysql-connector-j-9.0.0.jar"
+    ]
+}
